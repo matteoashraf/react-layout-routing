@@ -1,0 +1,135 @@
+/* General Styles */
+.bg-blue {
+  background-color: #2C3E50;
+}
+
+.text-blue {
+  color: #2C3E50;
+}
+
+.bg-turquoise {
+  background-color: #1ABC9C;
+}
+
+.txt-turquoise {
+  color: #1ABC9C;
+}
+
+.vh-90 {
+  min-height: 80vh;
+}
+
+.line {
+  width: 80px;
+  height: 4px;
+}
+
+/* Navbar */
+.nav-link.active {
+  background-color: #1ABC9C;
+  display: inline-block;
+}
+
+.navbar-custom {
+  transition: .6s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .nav-link.active {
+    padding: 8px;
+  }
+}
+
+/* Portfolio [Card] */
+.card-item .inner {
+  .overlay {
+    background-color: #1abc9ce6;
+    opacity: 0;
+    transition: .6s;
+    cursor: pointer;
+  }
+}
+
+.card-item:hover .overlay {
+  opacity: 1;
+}
+
+.custom-modal {
+  background-color: rgba(41, 125, 250, 0.253);
+  z-index: 9999999;
+}
+
+.modalImg {
+  width: 600px;
+}
+
+/* Contact */
+.contact .form-control:focus {
+  box-shadow: none;
+}
+
+.contact .btn:hover {
+  background-color: #1ABC9C;
+}
+
+.floating-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  opacity: 0;
+  font-size: 16px;
+  color: #1ABC9C;
+}
+
+.form-control:not(:placeholder-shown)+.floating-label {
+  top: -10px;
+  transform: translateY(0);
+  font-size: 12px;
+  opacity: 1;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  padding: 1.5rem 0 0.5rem 0;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-bottom-color: #1ABC9C;
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.6;
+}
+
+.form-control:focus::placeholder {
+  opacity: 0.3;
+}
+
+/* Footer */
+.upper-footer li i {
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-dark-blue {
+  background-color: #1A252F;
+}
