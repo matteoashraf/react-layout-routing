@@ -18,7 +18,7 @@ function App() {
       {path:'about', element:<TitleWrapper title="about"><About/></TitleWrapper>},
       {path:'portfolio', element:<TitleWrapper title="portfolio"><Portfolio/></TitleWrapper>},
       {path:'contact', element:<TitleWrapper title="contact"><Contact/></TitleWrapper>},
-      {path:'*', element:<TitleWrapper title="Page Not Found"><Error/></TitleWrapper>}
+      {path:'*', element:<TitleWrapper title="page not found"><Error/></TitleWrapper>}
     ]}
   ])
   return (
